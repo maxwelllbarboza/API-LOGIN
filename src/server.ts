@@ -8,7 +8,10 @@ dotenv.config()
 const app = express();
 app.use(express.json());
 
-
+app.get('/users', async (request, response) => {   
+    
+    return response.json("Oi cheguei")
+  })
 
 app.listen(port, () => console.log("Servidor subiu na porta 3000."));
 
