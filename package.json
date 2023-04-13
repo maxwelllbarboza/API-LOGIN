@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts",
+    "dev": "nodemon src/server.ts",
     "vercel-build": "npx prisma migrate deploy"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@prisma/client": "^4.12.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2"
   }
